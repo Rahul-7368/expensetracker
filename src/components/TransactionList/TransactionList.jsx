@@ -40,7 +40,6 @@ export default function TransactionList({ transactions, title, editTransactions,
 
     }, [currentPage, transactions])
 
-    // update page if all items on current page have been deleted
     useEffect(() => {
 
         if(totalPages < currentPage && currentPage > 1){

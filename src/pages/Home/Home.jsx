@@ -22,7 +22,7 @@ export default function Home() {
     entertainment: 0,
     travel: 0,
   });
-  const [categoryCount, setCategoryCount] = useState({
+  const [ categoryCount, setCategoryCount ] = useState({
     food: 0,
     entertainment: 0,
     travel: 0,
@@ -69,13 +69,13 @@ export default function Home() {
       travelCount = 0;
 
     expenseList.forEach((item) => {
-      if (item.category == "food") {
+      if (item.category === "food") {
         foodSpends += Number(item.price);
         foodCount++;
-      } else if (item.category == "entertainment") {
+      } else if (item.category === "entertainment") {
         entertainmentSpends += Number(item.price);
         entertainmentCount++;
-      } else if (item.category == "travel") {
+      } else if (item.category === "travel") {
         travelSpends += Number(item.price);
         travelCount++;
       }
